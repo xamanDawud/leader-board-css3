@@ -114,7 +114,7 @@ Media Queries
 
 /* Mobile Device */
 
-@media only screen and (max-width: 688px) {
+@media only screen and (min-width: 120px) and (max-width: 640px) {
   .container {
     width: 100%;
   }
