@@ -1,6 +1,9 @@
+/* Google Fonts import Link */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 /* Common Styles */
 body {
   background-color: #9f9f9f;
+  font-family: "Poppins", sans-serif;
 }
 main {
   display: flex;
@@ -35,7 +38,7 @@ main {
   width: 68px;
 }
 .palyer-name {
-  font-size: 18px;
+  font-size: 15px;
   margin-left: 20px;
 }
 .horizontal-line {
@@ -65,7 +68,7 @@ main {
 }
 
 .blog-content h1 {
-  font-size: 26px;
+  font-size: 20px;
   margin-top: 8px;
 }
 
@@ -88,7 +91,7 @@ main {
   width: 224px;
 }
 .card h1 {
-  font-size: 26px;
+  font-size: 21px;
 }
 .card p {
   color: #ed6b4f;
@@ -103,4 +106,92 @@ main {
   width: 94px;
   margin-left: 25px;
   margin-bottom: -7px;
+}
+
+/* --------------
+Media Queries 
+------------------*/
+
+/* Mobile Device */
+
+@media only screen and (max-width: 688px) {
+  .container {
+    width: 100%;
+  }
+  .top-players {
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    justify-content: center;
+  }
+  .player {
+    flex-direction: column;
+  }
+
+  .blogs {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .blog {
+    flex-direction: column;
+  }
+  .blog p {
+    text-align: center;
+  }
+
+  .course-cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .card {
+    text-align: center;
+  }
+}
+
+/* Tablet Devices */
+
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+  .container {
+    width: 100%;
+  }
+  .top-players {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+  }
+  .player {
+    flex-direction: column;
+  }
+  .blogs {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .blog {
+    flex-direction: column;
+  }
+  .blog p {
+    text-align: center;
+  }
+  .course-cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .card {
+    text-align: center;
+  }
+}
+
+/* Monitor Scrren */
+@media only screen and (min-width: 992) and (max-width: 1312px) {
+  .container {
+    width: 870px;
+  }
+  .top-players {
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: center;
+  }
+
+  .blogs {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .course-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
